@@ -1,279 +1,127 @@
-
-
-body{
-	height: 100vh;
-
-	background-color: lightgray;
+body {
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.container {
+    background-color: rgb(168, 233, 190);
+    display: flex;
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 
-
-
-
-.container{
-	background-color: rgb(168, 233,190);
-	display: flex;
-
-	margin-top: 300px;
-
-	margin-left:300px;
-
-
-
-
-
-
-
-
-	width: 900px;
-
-	height: 550px;
-
-
+    place-items: center;
 }
 
-.container_one{
-	display:flex;
-	position: relative;
-
-
-	margin-left: 15px;
+.container_one {
+    display: flex;
+    position: relative;
+    margin-left: 180px;
 }
 
-
-
-.container .container_red{
-
-	background-color: #BE0909;
-
-
-	display: flex;
-
-	margin-top: 80px;
-
-	margin-left: 40px;
-
-
-
-	width: 550px;
-
-	height: 400px;
-
-
-
-
-
-
-
+.container .container_red {
+    background-color: #BE0909;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 500px;
+    height: 400px;
+    margin-left:  -120px;
+    
 }
 
-.container .conatainer_orange{
-
-
-
-	background-color: #FFB039;
-
-
-	display: flex;
-
-	margin-top: 80px;
-
-	margin-left: 0px;
-
-
-
-	width: 250px;
-
-	height: 400px;
-
-
-
-
-
-
-
-
-
-
+.container .container_orange {
+    background-color: #FFB039;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 440px;
+    
 }
 
-
-.forms{
+.forms label {
     font-weight: bold;
     display: block;
-    margin-left: 40px;
     color: white;
-    margin-top: 35px;
+    margin-top: 20px;
     font-size: 14px;
+    margin-left: -150px;
 }
 
-
-.forms input{
-    width: 80%;
-    padding: 5px 0;
+.forms input,
+.forms textarea {
+    width: 150px;
+    
+    padding: 10px;
     max-width: 250px;
     border: none;
-    border-bottom: 0.5px solid white;
+    border-bottom: 1px solid white;
     background: transparent;
-    
     font-size: 16px;
     outline: none;
-    display: block;
-}
-
-.forms1{
-	
-
-	margin-top:  100px;
-	margin-left: -240px;
-}
-
-
-.forms1 input{
-    width: 80%;
-    padding: 5px 0;
-    max-width: 250px;
-    border: none;
-    border-bottom: 0.5px solid white;
-    background: transparent;
     color: white;
-    font-size: 16px;
-    outline: none;
     display: block;
+    margin-left: -150px;
 }
 
-.forms2{
-	
-
-	margin-top:  170px;
-	margin-left: -200px;
+.forms textarea {
+    resize: none;
+    height: 50px;
 }
 
-
-
-.forms2 input{
-    width: 80%;
-    padding: 5px 0;
-    max-width: 250px;
-    border: none;
-    border-bottom: 0.5px solid white;
-    background: transparent;
-    color: white;
-    font-size: 16px;
-    outline: none;
-    display: block;
-}
-
-
-.forms3{
-	
-
-	margin-top:  250px;
-	margin-left: -200px;
-}
-
-
-
-.forms3 input{
-    width: 1500%;
-    padding: 5px 0;
-    max-width: 250px;
-    border: none;
-    border-bottom: 0.5px solid white;
-    background: transparent;
-    color: white;
-    font-size: 16px;
-    outline: none;
-    display: block;
-}
-
-
-/*LABEL*/
-
-
-.forms1 label{
-	color: white;
-    
-}
-
-
-.forms2 label{
-	color: white;
-    
-}
-
-
-
-.forms3 label{
-	color: white;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.my-image{
-
-	dispaly:flex;
-
-	margin-left: -110px;
-
-}
-
-
-#name {
-	width: 800px;
-
-}
-
-.button{
-	position: relative;
-
-	
-	
-
-	top: 300px;
-
-	left: -80px;
-
-	
-
-	
-
-	width: 40%;
-	height: 40px;
+.button {
+    width: 120%;
+    height: 50px;
     margin-top: 20px;
     padding: 10px;
     background-color: #2a9d8f;
     border: none;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
 
+.button:hover {
+    background-color: greenyellow;
+}
 
-
+.forms input,
+.forms  textarea {
+    color: white;  /* Makes text visible */
 }
 
 
+
+
+
+
+.my-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+
+
+#full-name{
+    width: 1200px;
+
+}
+
+#message-last{
+    width: 1200px;
+}

@@ -4,98 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet"  href="style/styles.css">
-    <link rel="stylesheet"  href="style/normalize.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/normalize.css">
 </head>
 <body>
 
     <header> 
-
         <div class="container"> 
-
-
-
             <div class="container_one"> 
-
                 <div class="container_red"> 
+                    <form class="forms">
+                        <label for="full-name">FULL NAME</label>
+                        <input type="text" id="full-name" name="name" required>
 
-                    <form  class= "forms">
-                        <label for=" full name"> FULL NAME </label>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-                        <input type="text" id="name" name="name" required>
+                        <label for="message_reg">MESSAGE REGARDING</label>
+                        <input type="text" id="message_reg" name="subject" required>
 
+                        <label for="message-last">MESSAGE</label>
+                        <textarea id="message-last" name="message" placeholder="Your message"></textarea>
 
+                        <button type="submit" class="button">SEND MESSAGE</button>
                     </form> 
-
-
-                    <form  class= "forms1">
-                        <label for=" Email"> EMAIL </label>
-
-                        <input type="text" id="email" name="email" placeholder="Your Email">
-
-
-                    </form> 
-
-                    <form  class= "forms2">
-                        <label for=" Email">  MASSAGE REGARDING</label>
-
-                        <input type="text" id="MASSAGE_REGARDING" name="email" required>
-
-
-                    </form> 
-
-
-                    <form  class= "forms3">
-                        <label for=" Email"> MASSAGE</label>
-
-                        <input type="text" id="MAGGASE" name="email" placeholder="Your massage">
-
-
-                    </form> 
-
-
-                    <button class="button"> SEND MASSAGE </button>
-
-
-
-
-
-
-
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-                
-                <div class="conatainer_orange">
-
+                <div class="container_orange">
                     <img src="images/image.png" alt="Styled Image" class="my-image">
-
-
-
                 </div>
-
-
-
-
-
             </div>
-
-
-
         </div>
-
-
     </header>
-    
+
 </body>
 </html>
